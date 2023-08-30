@@ -1,0 +1,6 @@
+root=true
+
+[*]
+
+indent.size = 2
+indent_style = space
