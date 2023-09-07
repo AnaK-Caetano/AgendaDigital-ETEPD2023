@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="recuperar-senha.css">
 </head>
 <body>
+      <header>
+        <div class="flex">
+            <img src="Group 37.png" alt=""> <!--foto de navegação-->
+            <nav class="nav-fundo">
+                <ul class="nav-link">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Mensal</a></li>
+                    <li><a href="">Semanal</a></li>
+                </ul>
+            </nav>
+        </div> <!--flex-->
+    </header>
+    <section>
+        <div class="box">
+            <form action="">
+                <h1>Recuperar Senha</h1>
+                <div class="input-box">
+                    <input type="text">
+                    <span>Digite seu Email:</span>
+                </div> 
+                <div class="input-box">
+                    <input type="number">
+                    <span>CPF:</span>
+                </div>
+            </form>
+        </div>
+        <div class="btn-ret">
+            <button onclick="clique()">Recuperar</button>
+            <a href="#">Cadastrar-se</a>
+        </div>
+        <div class="foto">
+            <img src="recuperar-senha_resized.png" alt="">
+        </div>
+    </section>
+    <main></main>
+    <footer class="foot-box">
+        <img src="OIP-removebg-preview (1) 1.png" id="ete" alt="">
+        <img src="Educação-e-Esporte 1.png" id="gov" alt="">
+        <div class="foot-link">
+            <ul>
+                <li><a href="">Feedback</a></li>
+                <li><a href="">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function clique() {
+            window.location.href = "http://127.0.0.1:5500/RecuperarSCodigo.html"; //nao conseguir redirecionar para a mesma pagina :/ (so sei fazer se vincular com outra pagina)
+        }
+    </script>
     
 </body>
 </html>
