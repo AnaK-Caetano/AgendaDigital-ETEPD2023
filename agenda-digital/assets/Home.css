@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.flex {
+    background-color: #183394;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    height: 112px;
+}
+.flex img {
+    margin-left: 90px;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    padding: 68px;
+}
+
+ul.nav-link li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+section#onda-amarela {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -58px; 
+}
+#foto-body {
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+
+section#onda-azul {
+   display: flex;
+   margin-bottom: -100px;
+}
+
+.foot-box {
+    background-color: #F3A310;
+    height: 120px;    
+}
+.foot-box img#ete {
+    margin-left: 173px;
+}
+.foot-box img#gov {
+    padding: 0 103px;
+}
+
+.foot-link ul {
+    margin-top: -9vh;
+    list-style: none;
+}
+.foot-link ul li {
+    display: inline-block;
+    float: right;  
+    padding: 0 50px;  
+}
+.foot-link ul li a{
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* *Ainda falta colocar as mudanças dentro do responsivo/
+@media (max-width: 480px) { /*mobile*/
+    
+
+@media (min-width: 481px) and (max-width: 767px){ /*extra small devices */
+    
+}
+@media (min-width: 768px) and (max-width: 991px) { /*small tablet*/
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) { /*larges tablets/laptops */
+    
+}
+@media (min-width: 1200px) and (max-width: 1919px) { /*desktops*/
+    
+}
+@media (min-width: 1920px) { /*extra large screens*/
+    
+}
