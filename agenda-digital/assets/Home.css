@@ -22,19 +22,20 @@ body {
 .flex img {
     margin-left: 90px;
 }
-
-.nav-link {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 10vh;
-    padding: 68px;
+div.btn-l-c {
+    padding: 112px;
 }
-
-ul.nav-link li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 19px;
+div.btn-l-c button {
+    background-color: #F3A310;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 14px 26px;
+    border-radius: 13px;
+    color: white;
+    border: 0;
+}
+button#login {
+    margin-right: 41px;
 }
 
 section#onda-amarela {
@@ -47,7 +48,33 @@ section#onda-amarela {
     right: 0;
     top: 45%;
 }
-
+.txt {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.txt h1 {
+    color: #0049A6;
+    font-size: 55px;  
+    font-weight: 900; 
+}
+.txt p {
+    margin-top:  23px;
+    color: #F3A310;
+    font-size: 20px;
+}
+.txt button {
+    background-color: #F3A310;
+    color: white;
+    border: 0;
+    padding: 14px 213px 14px 26px;
+    font-size: 18px;
+    border-radius: 13px;
+    margin-top: 80px;
+    cursor: pointer;
+}
 section#onda-azul {
    display: flex;
    margin-bottom: -100px;
@@ -58,6 +85,7 @@ section#onda-azul {
     height: 120px;    
 }
 .foot-box img#ete {
+    padding: 10px;
     margin-left: 173px;
 }
 .foot-box img#gov {
