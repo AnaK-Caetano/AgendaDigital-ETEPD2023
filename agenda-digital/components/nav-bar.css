@@ -12,27 +12,35 @@
 body{
     background-color: #f1f1f1;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 
 header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
     background-color: #0049A6;
 }
 
-.navbar-container {
-    position: relative;
-    height: 7.5rem;
-    
+.header ul{
+    list-style-type: none;
+}
+
+.header a{
+    text-decoration: none;
+
+}
+
+.navbar-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 6rem;
+    justify-content: space-between;
+
+    padding: 0.3125rem 1.25rem;
+   
+}
+
+.navbar-img {
+    display: block;
+    max-width: 7.5rem; /* Largura máxima da imagem */
+    height: auto;
+    margin-left: 1rem;
 }
