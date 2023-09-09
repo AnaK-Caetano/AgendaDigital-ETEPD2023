@@ -76,17 +76,22 @@ section#onda-amarela {
     border-radius: 13px;
     margin-top: 80px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+
+.icon {
+    vertical-align: middle; 
+    margin-right: 10px;
+    color: #f1f1f1;
+}
+
+
 section#onda-azul {
    display: flex;
    margin-bottom: -100px;
 }
 
-.seta{
-    align-items: center;
-    justify-content: flex-end;
-    color: #ffffff;
-}
 .foot-box {
     background-color: #F3A310;
     height: 120px;    

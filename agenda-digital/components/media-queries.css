@@ -1,0 +1,23 @@
+/* Iphone */
+@media screen and (max-width: 400px) {
+    
+}
+/* Celulares convencionais */
+@media screen and (max-width: 600px) {
+    
+}
+/* Tablets */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Desktops com telas pequenas */
+@media screen and (max-width: 992px) {
+    
+}
+
+/* Desktops com telas grandes */
+@media screen and (max-width: 1200px) {
+    
+}
+

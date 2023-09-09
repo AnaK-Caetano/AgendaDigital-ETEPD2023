@@ -5,20 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar responsivo</title>
     <link rel="stylesheet" href="nav-bar.css">
+
+     <!--   Ícones Remixicons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <img class="navbar-img" src="../assets/img/logo-com-titulo.png" alt="Calendário Escolar ETEPD">
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Contato</a></li>
-            <li class="botao" ><a href="#">Login</a></li>
-            <li class="botao" ><a href="#">Cadastre-se</a></li>
-          
-        </ul>
-    </nav>
-</header>
+    <header class="header" id="header">
+        <nav class="navbar-container">
+            <a href="../assets/Home.html">
+                <img class="navbar-img" src="../assets/img/logo-com-titulo.png" alt="Calendário Escolar ETEPD">
+            </a>
+            <div class = "nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+            </ul>
+            
+            </div>
+            <div class="nav-btn">
+                <ul>
+                    <li class="nav-btn-link" >
+                        <a href="../assets/login.html">Login</a>
+                    </li>
+                    <li class="nav-btn-fantasma" >
+                        <a href="../assets/cadastro.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-closed">
+                <i class="ri-close-fill"></i>
+            </div>
+            <div class="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
 </body>
-</html>
+</html>             

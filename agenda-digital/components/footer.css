@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+.foot-section{
+    background-color: #F3A310;
+    height: 120px;    
+}
+.foot-section img#ete {
+    padding: 10px;
+    margin-left: 173px;
+}
+.foot-section img#gov {
+    padding: 0 103px;
+}
+
+.foot-link ul {
+    margin-top: -9vh;
+    list-style: none;
+}
+.foot-link ul li {
+    display: inline-block;
+    float: right;  
+    padding: 0 50px;  
+}
+.foot-link ul li a{
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+main {
+    height: 15vh;
+}
