@@ -46,8 +46,13 @@
     .offcanvas-body{
         background-color: rgba(242, 229, 187, 0.141);
     }
-
+    
     .nav-link.text-custom {
         color: #052C65;
+    }
+    
+    .nav-item a:hover::after{
+        color: #052C65;
+        width: 100%;
     }
 }
