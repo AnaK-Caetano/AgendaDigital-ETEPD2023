@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+.footer-container{
+    background-color: #F3A310;
+}
+
+.footer-section img{
+    flex-direction:column;
+    max-height: 4rem; /* Largura máxima da imagem */
+    height: auto;
+    margin-left: 1rem;
+    padding: 10px;
+}
