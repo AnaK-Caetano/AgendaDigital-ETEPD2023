@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+
+section#onda-amarela {
+    display: flex;
+    justify-content: flex-end;
+; 
+}
+#foto-body {
+    
+    right: 0;
+    top: 45%;
+}
+.txt {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.txt h1 {
+    color: #0049A6;
+    font-size: 55px;  
+    font-weight: 900; 
+}
+.txt p {
+    margin-top:  23px;
+    color: #F3A310;
+    font-size: 20px;
+}
+.txt button {
+    background-color: #F3A310;
+    color: white;
+    border: 0;
+    padding: 14px 213px 14px 26px;
+    font-size: 18px;
+    border-radius: 13px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+section#onda-azul {
+   display: flex;
+   margin-bottom: -100px;
+}
