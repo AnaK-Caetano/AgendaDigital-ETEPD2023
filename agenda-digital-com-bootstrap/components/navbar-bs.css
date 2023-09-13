@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar-brand img{
+    max-height: 4rem;
+}
+
 .bg-custom-yellow {
     background-color: #F3A310;
 }
