@@ -14,15 +14,9 @@ body {
 }
 
 
-section#onda-amarela {
-    display: flex;
-    justify-content: flex-end;
-; 
-}
+
 #foto-body {
-    
-    right: 0;
-    top: 45%;
+    max-width: 28rem;
 }
 .txt {
     position: absolute;
@@ -50,8 +44,4 @@ section#onda-amarela {
     border-radius: 13px;
     margin-top: 80px;
     cursor: pointer;
-}
-section#onda-azul {
-   display: flex;
-   margin-bottom: -100px;
 }

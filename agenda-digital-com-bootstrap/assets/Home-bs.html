@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calendário Escolar ETE Porto Digital</title>
+    <title>Calendário Escolar ETE PD</title>
 
     <link rel="stylesheet" href="../components/navbar-bs.css">
     <link rel="stylesheet" href="../components/footer-bs.css">
     <link rel="stylesheet" href="home-bs.css">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fs-10">
-            <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-dark ">
+            <div class="container" id="logo-container">
                 <!-- Logo -->
               <a class="navbar-brand" href="../assets/Home.html">
-                <img src="../assets/img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" width="120" height="72">
+                <img src="../assets/img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
               </a>
               <!-- Menu hamburguer button -->
               <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -32,10 +35,10 @@
                   <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <!-- Sidebar Body -->
-                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                <div class="offcanvas-body d-flex flex-column flex-xl-row p-4 p-lg-0">
                   <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1 pe-3">
                     <li class="nav-item mx-2">
-                      <a class="nav-link text-custom" aria-current="page" href="#">Home</a>
+                      <a class="nav-link text-custom" aria-current="page" href="../assets/Home-bs.html">Home</a>
                     </li>
                     <li class="nav-item mx-2">
                       <a class="nav-link text-custom" href="#">Sobre Nós</a>
@@ -54,58 +57,51 @@
             </div>
         </nav>
     </header>
+
     <main>
       <section>
-        <section id="onda-amarela">
-          <svg xmlns="http://www.w3.org/2000/svg" width="727" height="509" viewBox="0 0 1127 609" fill="none">
-              <path d="M876.05 511.474C995.489 706.477 1277.27 553.395 1327.5 511.474L1222.09 0.333899L0.500231 0.333806C13.4386 62.0265 245.395 185.132 425.26 165.766C647.9 141.795 655.384 151.202 876.05 511.474Z" fill="#E7E7E7"/>
-          </svg>
-        </section>
-        <div id="foto-body">
-            <img src="undraw_online_test_re_kyfx 1 (1).png" alt="" srcset="">
-        </div>
+        
         <div class="txt">
-            <h1>O lugar perfeito para <br>organizar seus estudos</br></h1>
-            <p> Aqui você pode personalizar todo o seu calendário <br>de estudos, e assim estar melhor preparado. </br></p>
-            <button>Acessar</button>
+          <h1>O lugar perfeito para <br>organizar seus estudos</br></h1>
+          <p> Aqui você pode personalizar todo o seu calendário <br>de estudos, e assim estar melhor preparado. </br></p>
+          <button>Saiba mais</button>
         </div>
-      <section id="onda-azul">
-          <svg xmlns="http://www.w3.org/2000/svg" width="727" height="509" viewBox="0 0 1217 518" fill="none">
-              <path d="M278.5 108C137.77 -72.2421 -31.8333 20.1667 -77 67.5L-139.5 517.5H1215.5C1195.67 457.667 967.623 349.297 787.5 332.5C535.5 309 538.5 441 278.5 108Z" fill="#E7E7E7" stroke="blacc"/>
-          </svg>
-      </section>
+        
+        <div id="foto-body">
+            <img src="img/home.png" alt="" srcset="">
+        </div>
       </section>
     </main>
 
-    <footer class="footer-container container-fluid text-white p-3" style="font-family: 'League Spartan', sans-serif;" id="footer-container">
-      <div class="footer-section row pt-5 pb-5">
-          <section class="col-md-5 text-center">
-              <h3 >Apoio Institucional</h3>
-              <div class="footer-img-container" class="d-flex justify-content-center" >
-                  <img src="../assets/img/logo-etepd.png" id="ete" alt="Logo ETEPD">
-                  <img src="../../agenda-digital-com-bootstrap/assets/img/Logo-Governo-PE.png" id="gov" alt="Logo Governo de Pernambuco">
-              </div>
-          </section>
-
-          <section class="footer-link col-md-7 text-center">
-              <h3 >Links Permanentes</h3>
-              <ul class="list-unstyled">
-                  <li>
-                      <a href="#" class="text-decoration-none text-white text-start">Sobre Nós</a>
-                  </li>
-                  <li>
-                      <a href="#" class="text-decoration-none text-white">Feedback</a>
-                  </li>
-              </ul>
-          </section>
-          <!-- Copyright©2023 -->
-          <section>
-              <div class="row-cols-1 text-center">
-                  <p>Copyright©2023 Todos os direitos reservados por ETEPD </p>
-              </div>
-          </section>
-      </div>
-  </footer>
+    <footer class="footer-container container-fluid text-white p-1" style="font-family: 'League Spartan', sans-serif;" id="footer-container">
+        <div class="footer-section row pt-2 pb-1">
+            <!-- Apoio institucional -->
+            <section class="col-md-4 text-center">
+                <h3>Apoio Institucional</h3>
+                <div class="footer-img-container" class="d-flex justify-content-center">
+                    <img src="../../agenda-digital-com-bootstrap/assets/img/Logo-Governo-PE.png" id="gov" alt="Logo Governo de Pernambuco">
+                    <img src="../assets/img/logo-etepd.png" id="ete" alt="Logo ETEPD">
+                </div>
+            </section>
+            <!-- links -->
+            <section class="footer-link d-flex col-md-5 p-4">
+                <div class="flex-xl-row">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none text-white text-start">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Termos de uso</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Copyright</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- Script toggle menu -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
