@@ -12,3 +12,8 @@
     margin-left: 1rem;
     padding: 10px;
 }
+
+.footer-section h3{
+    font-weight: 500;
+    font-size: 1.875rem;
+}
