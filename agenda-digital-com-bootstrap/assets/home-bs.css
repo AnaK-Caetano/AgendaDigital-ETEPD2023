@@ -16,11 +16,11 @@ body {
 .home-container{
 
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     isolation: isolate;
     padding-block: 10rem 4rem;
 
-    margin-left: 7rem;
+    margin: 0 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -35,13 +35,13 @@ body {
     max-height: fit-content;
 }
 
-#titulo {
+#home-title {
     color: #0049A6;
     font-size: 4.2rem;
     font-weight: 800;
 }
 
-#texto {
+#home-text{
     color: #F3A310;
     font-size: 1.9rem;
     padding: 2rem 0;
@@ -54,10 +54,9 @@ body {
     cursor: pointer;
     border-radius: 13px;
     
-    padding: 8px 130px 7px 27px;
+    padding: 8px 130px 8px 32px;
     font-size: 1.5rem;
-    text-align: center;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 20px;
+    gap: 1.5rem;
 } 
