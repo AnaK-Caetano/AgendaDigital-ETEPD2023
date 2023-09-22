@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
 
 .footer-container{
     background-color: #F3A310;
@@ -7,13 +6,28 @@
 
 .footer-section img{
     flex-direction:column;
-    max-height: 4rem; /* Largura máxima da imagem */
     height: auto;
     margin-left: 1rem;
     padding: 10px;
+
+    width: auto !important;
+    height:auto;
+    max-width:100%;
+    max-height: 4rem; /* altura máxima da imagem */
+
 }
 
 .footer-section h3{
     font-weight: 500;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
+}
+
+.linha {
+    --bs-gutter-x: -.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
 }

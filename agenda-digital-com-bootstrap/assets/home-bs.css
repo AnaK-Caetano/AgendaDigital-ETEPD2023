@@ -1,47 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap');
-
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #f3f3f3;
 }
 
+.home-container{
 
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding-block: 10rem 4rem;
 
-#foto-body {
-    max-width: 28rem;
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+
 }
-.txt {
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    font-family: 'Poppins', sans-serif;
-    
+
+.img-topo-home{
+    width: 100%;
+    height: auto;
+    max-height: fit-content;
 }
-.txt h1 {
+
+#titulo {
     color: #0049A6;
-    font-size: 55px;  
-    font-weight: 900; 
+    font-size: 4.2rem;
+    font-weight: 800;
 }
-.txt p {
-    margin-top:  23px;
+
+#texto {
     color: #F3A310;
-    font-size: 20px;
+    font-size: 1.9rem;
+    padding: 2rem 0;
 }
-.txt button {
+
+.cta-btn {
     background-color: #F3A310;
-    color: white;
     border: 0;
-    padding: 14px 213px 14px 26px;
-    font-size: 18px;
-    border-radius: 13px;
-    margin-top: 80px;
+    color: white;
     cursor: pointer;
-}
+    border-radius: 13px;
+    
+    padding: 8px 130px 7px 27px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+} 
