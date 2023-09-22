@@ -16,9 +16,8 @@ body {
 .home-container{
 
     position: relative;
-    /* overflow: hidden; */
     isolation: isolate;
-    padding-block: 10rem 4rem;
+    padding-block: 7rem 4rem;
 
     margin: 0 7rem;
     display: flex;

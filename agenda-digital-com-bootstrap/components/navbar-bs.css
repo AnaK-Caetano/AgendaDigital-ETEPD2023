@@ -8,6 +8,8 @@
 
 .navbar-brand img{
     max-width: 10rem;
+    width: 100%;
+    height: auto;
 }
 
 .bg-custom-yellow {
