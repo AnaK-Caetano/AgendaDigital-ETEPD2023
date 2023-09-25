@@ -19,7 +19,6 @@
 .login-text-color{
     color: #F3A310;
     text-decoration: none;
-
 }
 
 .nav-item a{
@@ -37,11 +36,13 @@
     bottom: 0;
     left: 0;
     transition: 0.3s ease-out;
+    
 
 }
 
 .nav-item a:hover::after{
     width: 100%;
+    color: #052C65;
 }
 
 @media (max-width: 992px){
@@ -54,6 +55,10 @@
     }
     
     .nav-link.text-custom {
+        color: #052C65;
+    }
+
+    .nav-item a::after{
         color: #052C65;
     }
     
