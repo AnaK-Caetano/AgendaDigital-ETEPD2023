@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Login</title>
+    
+    <!-- Favicon -->
+   <link rel="icon" href="img/logo-sem-titulo.png" type="image/png">
 
+   <!-- Links -->
     <link rel="stylesheet" href="../components/navbar-bs.css">
     <link rel="stylesheet" href="../components/footer-bs.css">
     <link rel="stylesheet" href="login-bs.css">
 
-    <link rel="icon" href="img/logo-sem-titulo.png" type="image/png">
-
+    <!-- links Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-
 </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-xl navbar-dark ">
@@ -42,10 +46,10 @@
                     <a class="nav-link text-custom" aria-current="page" href="../assets/index.html">Home</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-custom" href="#">Sobre Nós</a>
+                    <a class="nav-link text-custom" href="../assets/em-desenvolvimento.html">Sobre Nós</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link text-custom" href="#">Contato</a>
+                    <a class="nav-link text-custom" href="../assets/em-desenvolvimento.html">Contato</a>
                   </li>
                 </ul>
                 <!-- Login / Cadastre-se Button -->
@@ -57,13 +61,13 @@
             </div>
           </div>
       </nav>
-  </header>
+    </header>
     
     <main>
         <section class="form-principal">
             <div class="form-container">
               <div class="card-login">
-                  <form action="#"> 
+                  <form action="#" method="post"> 
                       <h1>Login</h1>
                       <div class="form-login">
                           <label for="cpf">CPF:</label><br>
@@ -77,8 +81,8 @@
                       <button type="submit" class="login-btn">Entrar</button>
                       
                       <div class="esquecer-registrar">
-                          <a href="#"> Cadastrar-se</a>   
-                          <a href="#"> Esqueci a senha</a>        
+                          <a href="cadastro.html"> Cadastrar-se</a>   
+                          <a href="recuperar-senha.html"> Esqueci a senha</a>        
                       </div>
                       
                   </form>
@@ -96,22 +100,23 @@
           <section class="col-md-4 text-center">
               <h3>Apoio Institucional</h3>
               <div class="footer-img-container" class="d-flex justify-content-center">
-                  <img src="../../agenda-digital-com-bootstrap/assets/img/Logo-Governo-PE.png" id="gov" alt="Logo Governo de Pernambuco">
-                  <img src="../assets/img/logo-etepd.png" id="ete" alt="Logo ETEPD">
+                  <img src="../../agenda-digital-com-bootstrap/assets/img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
+                  <img src="../assets/img/logo-etepd.png" class="img-fluid" id="etepd" alt="Logo ETEPD">
               </div>
           </section>
+
           <!-- links -->
           <section class="footer-link col-md-5 p-2">
-              <div class="footer-container container">
+              <div class="container">
                   <div class="row mt-4 d-flex">
                     <div class="col-sm">
-                      <a href="../../agenda-digital-com-bootstrap/assets/404.html" class="text-decoration-none text-white text-start">Feedback</a>
+                      <a href="../assets/em-desenvolvimento.html" class="text-decoration-none text-white text-start">Feedback</a>
                     </div>
                     <div class="col-sm">
-                      <a href="../../agenda-digital-com-bootstrap/assets/404.html" class="text-decoration-none text-white">Termos de uso</a>
+                      <a href="../assets/em-desenvolvimento.html" class="text-decoration-none text-white">Termos de uso</a>
                     </div>
                     <div class="col-sm">
-                      <a href="../../agenda-digital-com-bootstrap/assets/404.html" class="text-decoration-none text-white">Copyright</a>
+                      <a href="../assets/em-desenvolvimento.html" class="text-decoration-none text-white">Copyright</a>
                     </div>
                   </div>
               </div>

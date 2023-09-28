@@ -18,19 +18,20 @@ body {
     isolation: isolate;
     padding-block: 7rem 4rem;
 
-    margin: 0 7rem;
+    margin: 0 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 5rem;
 
+    width: auto; 
+    height: 77vh; 
 }
 
 .img-topo-home{
     width: 100%;
     height: auto;
-    max-height: fit-content;
 }
 
 #home-title {
@@ -44,20 +45,62 @@ body {
     font-size: 1.9rem;
     padding: 2rem 0;
 }
+
 .home-cta-btn {
     display: inline-flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px; /* Espaçamento entre o texto e o ícone */
+    gap: 10px; 
     background-color: #f3a310;
     color: #fff;
+
     padding: 10px 120px;
     border-radius: 5px;
-    text-decoration: none; /* Remove sublinhado padrão do link */
-  }
+    transition: background-color 0.3s;
+    width: 18rem; 
+    height: 3.125rem;
+    padding: 10px; 
+    margin-bottom: 2rem;
+}
+
+
+.home-cta-btn:hover {
+    background-color: #e2960d;
+}
+
+.home-cta-link{
+      text-decoration: none;
+      margin-right: 0.5rem;
+}
   
   .home-cta-icon {
-    width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    width: 24px;
     height: 24px;
-    fill: #fff; /* Cor do ícone */
+    fill: #fff; 
+} 
+
+@media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 2rem;
+      padding: 3rem 2rem;
+    }
+    #home-title {
+      font-size: 3rem;
+    }
+    #home-text {
+      font-size: 1.4rem;
+    }
+    .home-cta-btn {
+      padding: 10px 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img-topo-home img {
+      max-width: 100%;
+      height: auto;
+    }
   }
   
