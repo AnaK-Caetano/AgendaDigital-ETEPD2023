@@ -21,13 +21,12 @@ body {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
     
     align-items: center;
     padding: 1.5rem 0rem;
     margin: 0 auto;
-
 }
 
 .msg-recuperar-container{
@@ -43,18 +42,17 @@ body {
     align-items: center;
     padding: 1.5rem 0rem;
     margin: 0 auto;
-
 }
 
 .msg-img-fundo img {
-    max-width: 48vh;
-    
+    max-width: 50vw;
+    width: 100%;
+    height: auto;
 }
 
-.msg-recuperar-container p {
-    
+.msg-recuperar-container p{
     color: black;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 400;
 }
