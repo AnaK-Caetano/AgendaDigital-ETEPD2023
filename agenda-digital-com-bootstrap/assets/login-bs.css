@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 .form-principal{
     background: #F3F3F3;
@@ -12,40 +12,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-
+    
+    padding: 1.5rem 0rem;
+    margin: 0 auto;
 }
+
 .form-container{
+
+    position: relative;
+    max-width: 56rem;
+    width: 100%;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     flex-wrap: wrap-reverse;
     gap: 2rem;
 
 }
 
-.main-login-img{
-    display: flex;
-    max-width: 25rem;
-    padding-right: 0px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.card-login h1{
-
-    width: 239.071px;
-    height: 58.555px;
-    color: #0A0A0A;
+.card-login-esquerda h1{
+    padding: 1.5rem 0.625rem;
     text-align: center;
-    font-size: 37.012px;
-    font-style: normal;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: normal;
 }
-.form-login input{
+
+.fieldset{
+    border: none;
+    display: flex;
+    padding: 1rem;
+}
+
+.login-input-box{
+
+}
+
+
+.card-login-esquerda input{
     width: 100%;
     outline: none;
     background: transparent;
@@ -57,6 +62,8 @@
     gap: 10px;
     margin-bottom: 30px;
 }
+
+
 .login-btn{
     width: 100%;
     padding: 10px;
@@ -68,14 +75,23 @@
     color: #fff;
     text-align: center;
 }
+.main-login-img{
+    display: flex;
+    max-width: 25rem;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+}
 .esquecer-registrar{
     text-align: center;
 }
+
 .esquecer-registrar a{
     color: #F3A310;
     cursor: pointer;
-    padding: 15px;
+    padding: 1rem;
 }
+
 .esquecer-registrar a:hover{
     text-decoration: underline;
 }

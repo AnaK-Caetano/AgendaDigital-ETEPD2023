@@ -66,31 +66,32 @@
     <main>
         <section class="form-principal">
             <div class="form-container">
-              <div class="card-login">
+              <div class="card-login-esquerda">
                   <form action="#" method="post"> 
                       <h1>Login</h1>
-                      <div class="form-login">
-                          <label for="cpf">CPF:</label><br>
-                          <input type="number" id="cpf" autocomplete="off" required><br>
+                      <fieldset>
+                        <div class="login-input-box">
+                          <label for="cpf">CPF:</label>
+                          <input type="number" id="cpf" autocomplete="off" required>
+                        </div>
+                        <div class="login-input-box">
+                          <label for="senha">Senha:</label>
+                          <input type="password" required>
+                        </div>
 
-                          <label for="senha">Senha:</label><br>
-                          <input type="password" required><br>
-                      </div>
-                      
+                      </fieldset>
                       <button type="submit" class="login-btn">Entrar</button>
-                      
                       <div class="esquecer-registrar">
                           <a href="cadastro.html"> Cadastrar-se</a>   
                           <a href="recuperar-senha.html"> Esqueci a senha</a>        
                       </div>
-                      
                   </form>
               </div>
               <div class="main-login-img">
-                  <img src="../assets/img/login.png">
+                <img src="../assets/img/login.png">
               </div>
             </div>
-          </section>
+        </section>
     </main>
 
     <footer class="footer-container container-fluid text-white p-1" style="font-family: 'League Spartan', sans-serif;" id="footer-container">
