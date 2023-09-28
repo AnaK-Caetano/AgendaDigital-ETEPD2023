@@ -14,7 +14,6 @@ body {
 }
 
 .home-container{
-
     position: relative;
     isolation: isolate;
     padding-block: 7rem 4rem;
@@ -45,17 +44,20 @@ body {
     font-size: 1.9rem;
     padding: 2rem 0;
 }
-
-.cta-btn {
-    background-color: #F3A310;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    border-radius: 13px;
-    
-    padding: 8px 130px 8px 32px;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1.5rem;
-} 
+.home-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o texto e o ícone */
+    background-color: #f3a310;
+    color: #fff;
+    padding: 10px 120px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove sublinhado padrão do link */
+  }
+  
+  .home-cta-icon {
+    width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 24px;
+    fill: #fff; /* Cor do ícone */
+  }
+  
