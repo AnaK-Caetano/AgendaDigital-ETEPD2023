@@ -45,10 +45,9 @@
     padding: 1rem;
 }
 
-.login-input-box{
+.card-login-esquerda{
 
 }
-
 
 .card-login-esquerda input{
     width: 100%;
@@ -75,6 +74,7 @@
     color: #fff;
     text-align: center;
 }
+
 .main-login-img{
     display: flex;
     max-width: 25rem;
@@ -84,6 +84,10 @@
 }
 .esquecer-registrar{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-around;
 }
 
 .esquecer-registrar a{
