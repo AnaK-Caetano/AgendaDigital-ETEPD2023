@@ -1,3 +1,34 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    include ('src\assets\agenda\evento\action\conexao.php');
+    $database = new Database();
+    $db = $database->conectar();
+    
+    if (isset($_POST) &&(!empty($_POST))){
+        $cpf = $_POST['cpf'];
+        $senha = $_POST['senha'];
+        $sql = "SELECT *
+                FROM usuarios
+                WHERE nome = '$cpf' AND senha = sha1('$senha')";
+        $req = $db->prepare($sql);
+        $req->execute();
+        $linhas = $req->rowCount();
+        if ($linhas == 1) {
+            while ($dados = $req->fetch(PDO::FETCH_ASSOC)) {
+                $id_usuario = $dados['id_usuario'];
+                $cpf_usuario = $dados['cpf'];
+                $_SESSION['idUsuario'] = $id_usuario;
+                $_SESSION['nomeUsuario'] = $nome_usuario;
+            }
+                header('Location: src\assets\agenda\calendario-sistema.php');
+        }else {
+            //Mensagem de erro no Login
+            header('Location: login.php?erro=1');
+        }
+    }
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -63,7 +94,13 @@
           </div>
       </nav>
     </header>
-    
+    <?php
+                    if(isset($_GET['erro']) && $_GET['erro']==1) {
+                        echo "<div style='text-align: center' class=\"alert alert-danger\" role=\"alert\">
+                        <b>Usuario ou senha Incorretos!</b>
+                      </div>";
+                    }
+                    ?>
     <main>
         <section class="form-principal">
             <div class="form-container">

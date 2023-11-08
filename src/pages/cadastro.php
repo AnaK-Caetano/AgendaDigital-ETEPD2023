@@ -108,12 +108,12 @@
                   <a href="#">Retornar</a>   
                 </div> 
                 <div class="finalizar">
-                  <a href="msg-cadastro.html">Finalizar</a>        
+                  <button onclick="finalizar-cadastro" type="submit">Finalizar</button>      
                 </div>
-              </div>
+              <!-- </div>
                 <div class="cadastro-administrativo">
                   <a href="cadastro-administrativo.html">Cadastro Administrativo</a>        
-              </div>
+              </div> -->
             </form>
         </div>
       </section>
@@ -150,6 +150,7 @@
   </footer>
 
     <!-- Script toggle menu -->
+    <script src="../js/finalizar-cadastro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>

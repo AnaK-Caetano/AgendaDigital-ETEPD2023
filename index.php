@@ -7,12 +7,12 @@
     <title>Calendário Escolar ETE Porto Digital</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/logo-sem-titulo.png" type="image/png">
+    <link rel="icon" href="./src/public/img/logo-sem-titulo.png" type="image/png">
 
     <!-- links -->
-    <link rel="stylesheet" href="../components/navbar-bs.css">
-    <link rel="stylesheet" href="../components/footer-bs.css">
-    <link rel="stylesheet" href="../styles/home-bs.css">
+    <link rel="stylesheet" href="src/components/navbar-bs.css">
+    <link rel="stylesheet" href="src/components/footer-bs.css">
+    <link rel="stylesheet" href="./src/styles/home-bs.css">
 
     <!-- links Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -25,8 +25,8 @@
       <nav class="navbar navbar-expand-xl navbar-dark ">
           <div class="container" id="logo-container">
               <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-              <img src="./img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
+            <a class="navbar-brand" href="index.php">
+              <img src="./src/public/img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
             </a>
             <!-- Menu hamburguer button -->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -54,8 +54,8 @@
                 </ul>
                 <!-- Login / Cadastre-se Button -->
                 <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center gap-3">
-                  <a href="../pages/login.html" class="login-text-color" class="text-primary-emphasis text-decoration-none">Login</a>
-                  <a href="../pages/cadastro.html" class="text-primary-emphasis text-decoration-none px-3 py-1 bg-custom-yellow rounded-3">Cadastre-se</a>
+                  <a href="src/pages/login.php" class="login-text-color" class="text-primary-emphasis text-decoration-none">Login</a>
+                  <a href="src/pages/cadastro.php" class="text-primary-emphasis text-decoration-none px-3 py-1 bg-custom-yellow rounded-3">Cadastre-se</a>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@
           <section class="col-md-4 text-center">
               <h3>Apoio Institucional</h3>
               <div class="footer-img-container" class="d-flex justify-content-center">
-                  <img src="./img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
+                  <img src="src/public/img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
                   <img src="./img/logo-etepd.png" class="img-fluid" id="etepd" alt="Logo ETEPD">
               </div>
           </section>
