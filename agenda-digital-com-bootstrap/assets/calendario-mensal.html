@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='utf-8' />
+
+    <!-- Titulo -->
+    <title>Calendário Escolar</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo-sem-titulo.png" type="image/png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="calendario-mensal.css">
+    <link rel="stylesheet" href="../components/navbar-bs.css">
+
+    <style>
+        .container {
+            position: relative;
+            max-width: 800px; /* Define a largura máxima do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo na tela */
+            padding: 20px; /* Adiciona algum espaço ao redor do conteúdo */
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #F3A310;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <form action="logout.php" method="post">
+                <input class="logout-button" type="submit" value="Logout">
+            </form>
+        </div>
+    </header>
+
+    <div id='calendar'></div>
+
+    <script src='js/index.global.min.js'></script>
+    <script src='js/core/locales-all.global.min.js'></script>
+    <script src='js/calendario-mensal.js'></script>
+  </body>
+</html>
