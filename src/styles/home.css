@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+main{
+  background-color: #fffefb;
+  display: flex;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.home-container{
+    position: relative;
+    isolation: isolate;
+    padding-block: 7rem 4rem;
+
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+
+    width: auto; 
+    height: 75vh; 
+}
+
+.home-title {
+    color: #0049A6;
+    font-size: 4.2rem;
+    font-weight: 800;
+}
+
+.home-text{
+    color: #F3A310;
+    font-size: 1.9rem;
+    padding: 2rem 0;
+}
+
+.home-text-underline {
+  position: relative;
+  display: inline;
+}
+
+.home-text-underline::after {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #0049A6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.home-cta-btn {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px; 
+    background-color: #f3a310;
+    color: #fff;
+
+    padding: 10px 120px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 18rem; 
+    height: 3.125rem;
+    padding: 10px; 
+    margin-bottom: 2rem;
+}
+
+.home-cta-btn:hover {
+    background-color: #e2960d;
+}
+
+.home-cta-link{
+  text-decoration: none;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+  
+.home-cta-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+} 
+
+.img-topo-home{
+  width: 100%;
+  height: auto;
+}
+
+/* Responsividade tablet */
+@media (min-width: 616px) and (max-width: 1303px) {
+    .home-container {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+      gap: 3rem;
+
+      margin: 0 6rem;
+      padding: 3rem 2rem;
+    }
+
+    .home-title {
+      font-size: 3rem;
+    }
+
+    .home-text {
+      font-size: 1.2rem;
+    }
+    .home-cta-btn {
+      gap: 10px;
+      margin-bottom: 0px;
+      width: 12rem;
+    }
+    .home-text-underline::after{
+      height: 4px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .img-topo-home img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Responsividade mobile */
+  @media (max-width: 616px) {
+    .home-container{
+      margin: 0 2rem;
+      flex-direction: column;
+      gap: 0px;
+    }
+    
+    .home-title {
+        font-size: 2rem !important; /* Ajuste o tamanho da fonte conforme necessário */
+        text-align: center;
+    }
+
+    .home-text {
+        font-size: 1rem !important; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    .home-text-underline::after{
+      height: 3px;
+    }
+}

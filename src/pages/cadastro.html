@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo-sem-titulo.png" type="image/png">
+
+    <!-- links -->
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footer.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+
+    <!-- links Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="min-vh-100">
+    <div class="container-fluid no-padding d-flex flex-column min-vh-100">
+      <header>
+        <nav class="navbar navbar-expand-xl navbar-dark ">
+            <div class="container" id="logo-container">
+                <!-- Logo -->
+              <a class="navbar-brand" href="../../index.html">
+                <img src="../img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
+              </a>
+              <!-- Menu hamburguer button -->
+              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Sidebar -->
+              <div class="sidebar  offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-primary-emphasis border-bottom">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Calendário Escolar ETE PD</h5>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- Sidebar Body -->
+                <div class="offcanvas-body d-flex flex-column flex-xl-row p-4 p-lg-0">
+                  <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1 pe-3">
+                    <li class="nav-item mx-2">
+                      <a class="nav-link text-custom" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link text-custom" href="em-desenvolvimento.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link text-custom" href="em-desenvolvimento.html">Contato</a>
+                    </li>
+                  </ul>
+                  <!-- Login / Cadastre-se Button -->
+                  <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center gap-3">
+                    <a href="login.html" class="login-text-color" class="text-primary-emphasis text-decoration-none">Login</a>
+                    <a href="cadastro.html" class="text-primary-emphasis text-decoration-none px-3 py-1 bg-custom-yellow rounded-3">Cadastre-se</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+      </header>
+  
+      <main class="flex-grow-1">
+        <section class="cadastro-container">
+            <h1>Cadastro</h1>
+            <form action="../config/autenticar-cadastro-aluno.php" method="post">
+              <fieldset>
+                <div class="cadastro-forms-container">
+                  <div class="cadastro-input-box">    
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" minlength="10" maxlength="50" autocomplete="off" placeholder="Maria José" required>
+                  </div>
+                  <div class="cadastro-input-box">
+                    <label for="cpf">CPF (Apenas números):</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="123.456.789-00" maxlength="14" autocomplete="off" required>
+                  </div>
+                  <div class="cadastro-input-box">
+                    <label for="email">E-mail institucional:</label>
+                    <input type="email" id="email" name="email" placeholder="mjc@etepd.com" maxlength="30" required>
+                  </div>
+                  <div class="cadastro-input-box">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" required>
+                  </div>
+                  <div class="cadastro-input-box">        
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="**********" minlength="5" maxlength="20" required>
+                  </div>
+                  <div class="cadastro-input-box">    
+                    <label for="senha">Confirme sua senha:</label>
+                    <input type="password" placeholder="**********" minlength="5" maxlength="20" required>
+                  </div>
+                  <div class="cadastro-input-box">   
+                    <label for="periodo">Período de ingresso (por exemplo, 2023.1):</label>
+                    <input type="text" id="periodo" name="periodo" maxlength="6"  pattern="\d{4}\.\d" placeholder="YYYY.X" required>
+                  </div> 
+                  <div class="cadastro-input-box"> 
+                    <label for="modulo">Módulo/Curso:</label>
+                    <select id="modulo" name="modulo">
+                      <option value="DS1">Desenvolvimento de Sistemas - 1º Módulo</option>
+                      <option value="DS2">Desenvolvimento de Sistemas - 2º Módulo</option>
+                      <option value="DS3">Desenvolvimento de Sistemas - 3º Módulo</option>
+                      <option value="MT1">Multimídia - 1º Módulo</option>
+                      <option value="MT2">Multimídia - 2º Módulo</option>
+                      <option value="MT3">Multimídia - 3º Módulo</option>
+                    </select>
+                  </div>  
+                </fieldset>
+                <div class="cadastro-cta-btn">
+                  <div class="retornar">
+                    <a href="../../index.html">Retornar</a>   
+                  </div> 
+                  <div id="cadastro-btn">
+                    <button class="finalizar" type="submit">Finalizar</button>
+                  </div>
+                  
+                </div>
+                  <div class="cadastro-administrativo">
+                    <a href="cadastro-administrativo.html">Cadastro Administrativo</a>        
+                </div>
+              </form>
+        </section>
+      </main>
+  
+      <footer class="footer-container mt-auto container-fluid text-white p-1" style="font-family: 'League Spartan', sans-serif;" id="footer-container">
+        <div class="footer-section linha pt-2 pb-1 justify-content-between">
+            <!-- Apoio institucional -->
+            <section class="col-md-4 text-center">
+                <h3>Apoio Institucional</h3>
+                <div class="footer-img-container" class="d-flex justify-content-center">
+                    <img src="../img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
+                    <img src="../img/logo-etepd.png" class="img-fluid" id="etepd" alt="Logo ETEPD">
+                </div>
+            </section>
+
+            <!-- links -->
+            <section class="footer-link col-md-5 p-2">
+                <div class="container">
+                    <div class="row mt-4 d-flex">
+                      <div class="col-sm">
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white text-start">Feedback</a>
+                      </div>
+                      <div class="col-sm">
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white">Termos de uso</a>
+                      </div>
+                      <div class="col-sm">
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white">Copyright</a>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Validações -->
+    <script src="../js/validar-inputs.js"></script>
+
+    <!-- Script toggle menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

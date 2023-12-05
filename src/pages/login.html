@@ -1,34 +1,33 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Calendário Escolar ETE Porto Digital</title>
-
+    <title>Login</title>
+    
     <!-- Favicon -->
-    <link rel="icon" href="src/img/logo-sem-titulo.png" type="image/png">
+   <link rel="icon" href="../img/logo-sem-titulo.png" type="image/png">
 
-    <!-- links -->
-    <link rel="stylesheet" href="src/components/navbar.css">
-    <link rel="stylesheet" href="src/components/footer.css">
-    <link rel="stylesheet" href="src/styles/home.css">
+   <!-- Links -->
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footer.css">
+    <link rel="stylesheet" href="../styles/login.css">
 
     <!-- links Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  </head>
+</head>
 
   <body class="min-vh-100">
     <div class="container-fluid no-padding d-flex flex-column min-vh-100">
-
       <header>
         <nav class="navbar navbar-expand-xl navbar-dark ">
             <div class="container" id="logo-container">
                 <!-- Logo -->
-              <a class="navbar-brand" href="index.html">
-                <img src="src/img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
+              <a class="navbar-brand" href="../../index.html">
+                <img src="../img/logo-com-titulo.png" alt="Logo Calendário Escolar ETEPD" >
               </a>
               <!-- Menu hamburguer button -->
               <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -45,44 +44,55 @@
                 <div class="offcanvas-body d-flex flex-column flex-xl-row p-4 p-lg-0">
                   <ul class="navbar-nav d-flex justify-content-center align-items-center flex-grow-1 pe-3">
                     <li class="nav-item mx-2">
-                      <a class="nav-link text-custom" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link text-custom" aria-current="page" href="../../index.html">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                      <a class="nav-link text-custom" href="src/pages/em-desenvolvimento.html">Sobre Nós</a>
+                      <a class="nav-link text-custom" href="em-desenvolvimento.html">Sobre Nós</a>
                     </li>
                     <li class="nav-item mx-2">
-                      <a class="nav-link text-custom" href="src/pages/em-desenvolvimento.html">Contato</a>
+                      <a class="nav-link text-custom" href="em-desenvolvimento.html">Contato</a>
                     </li>
                   </ul>
                   <!-- Login / Cadastre-se Button -->
                   <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center gap-3">
-                    <a href="src/pages/login.html" class="login-text-color" class="text-primary-emphasis text-decoration-none">Login</a>
-                    <a href="src/pages/cadastro.html" class="text-primary-emphasis text-decoration-none px-3 py-1 bg-custom-yellow rounded-3">Cadastre-se</a>
+                    <a href="login.html" class="login-text-color" class="text-primary-emphasis text-decoration-none">Login</a>
+                    <a href="cadastro.html" class="text-primary-emphasis text-decoration-none px-3 py-1 bg-custom-yellow rounded-3">Cadastre-se</a>
                   </div>
                 </div>
               </div>
             </div>
         </nav>
       </header>
-  
+      
       <main class="flex-grow-1">
-        <section class="home-container">
-          <div class="text-container">
-            <h1 class="home-title">O lugar perfeito para organizar seus estudos</h1>
-            <p class="home-text"> Organize sua jornada acadêmica com <u class="home-text-underline">simplicidade</u>: Em nossa agenda, cada detalhe é feito para tornar sua vida estudantil mais <u class="home-text-underline">fácil e produtiva</u>.</p>
-            
-            <div class="home-cta-btn">
-              <a class="home-cta-link" href="src/pages/em-desenvolvimento.html">Saiba mais</a>
-              <svg class="home-cta-icon" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                <path d="M28.35 16.65L36.225 24.525H9V29.025H36.225L28.35 36.9L31.5 40.05L45 26.775L31.5 13.5L28.35 16.65Z" fill="#FBFAFB"/>
-              </svg>
-            </div>
-          </div>
+          <section class="form-principal">
+              <div class="form-container">
+                <div class="card-login-esquerda">
+                    <form action="../config/login.php" method="post"> 
+                        <h1>Login</h1>
+                        <fieldset>
+                          <div class="login-input-box">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="123.456.789-56" autocomplete="off" required>
+                          </div>
+                          <div class="login-input-box">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" placeholder="**********" pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}$" maxlength="20"  required>
+                          </div>
   
-          <div class="img-topo-home">
-            <img src="src/img/home.png" alt="ilustração do estudante no computador" width="446" height="337.4">
-          </div>
-        </section>
+                        </fieldset>
+                        <button type="submit" class="login-btn">Entrar</button>
+                        <div class="esquecer-registrar">
+                            <a href="cadastro.html"> Cadastrar-se</a>   
+                            <a href="recuperar-senha.html"> Esqueci a senha</a>        
+                        </div>
+                    </form>
+                </div>
+                <div class="main-login-img">
+                  <img src="../img/login.png" class="img-fluid custom-max-width" alt="Ilustração estudante no pc">
+                </div>
+              </div>
+          </section>
       </main>
   
       <footer class="footer-container mt-auto container-fluid text-white p-1" style="font-family: 'League Spartan', sans-serif;" id="footer-container">
@@ -91,23 +101,23 @@
             <section class="col-md-4 text-center">
                 <h3>Apoio Institucional</h3>
                 <div class="footer-img-container" class="d-flex justify-content-center">
-                    <img src="src/img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
-                    <img src="src/img/logo-etepd.png" class="img-fluid" id="etepd" alt="Logo ETEPD">
+                    <img src="../img/Logo-Governo-PE.png" class="img-fluid" id="gov" alt="Logo Governo de Pernambuco">
+                    <img src="../img/logo-etepd.png" class="img-fluid" id="etepd" alt="Logo ETEPD">
                 </div>
             </section>
-
+  
             <!-- links -->
             <section class="footer-link col-md-5 p-2">
                 <div class="container">
                     <div class="row mt-4 d-flex">
                       <div class="col-sm">
-                        <a href="src/pages/em-desenvolvimento.html" class="text-decoration-none text-white text-start">Feedback</a>
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white text-start">Feedback</a>
                       </div>
                       <div class="col-sm">
-                        <a href="src/pages/em-desenvolvimento.html" class="text-decoration-none text-white">Termos de uso</a>
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white">Termos de uso</a>
                       </div>
                       <div class="col-sm">
-                        <a href="src/pages/em-desenvolvimento.html" class="text-decoration-none text-white">Copyright</a>
+                        <a href="em-desenvolvimento.html" class="text-decoration-none text-white">Copyright</a>
                       </div>
                     </div>
                 </div>
@@ -116,7 +126,10 @@
       </footer>
     </div>
 
-    <!-- Script toggle menu -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+    <!-- Validações -->
+    <script src="../js/validar-inputs.js"></script>
+
+  <!-- Script toggle menu -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
 </html>
