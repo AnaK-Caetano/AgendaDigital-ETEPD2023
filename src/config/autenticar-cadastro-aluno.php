@@ -24,17 +24,17 @@ $rowEmail = mysqli_fetch_assoc($resultEmail);
 
 
 if($rowEmail['total'] == 1) {
-  $sql = "INSERT INTO usuarios (email, nome, nascimento,senha, cpf, modulo)
+  $sql = "INSERT INTO usuarios (email, nome, nascimento, senha, cpf, modulo)
   VALUES ('$email', '$nome', '$nascimento ', '$senha','$cpf','$modulo')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: msg-cadastro.html");
+        header("Location: ../pages/msg-cadastro.html");
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
       }
     }else{
         echo  "<script>alert('Email não existe no nosso cadastrado');</script>";
-      header("refresh: 1; cadastro.html");
+      header("refresh: 1; ../pages/cadastro.html");
       exit;
     }
 

@@ -43,12 +43,12 @@ if ($result->num_rows > 0) {
         die("Erro na execução da consulta de inserção: " . $insertStmt->error);
     }
 
-    header("Location: msg-cadastro.html");
+    header("Location: ../pages/msg-cadastro.html");
     exit();
 } else {
     $mensagem = "Código incorreto. Tente novamente.";
 
-    header("Location: cadastro-administrativo.html");
+    header("Location: ../pages/cadastro-administrativo.html");
     exit();
 }
 

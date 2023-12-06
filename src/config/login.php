@@ -19,11 +19,11 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Login successful
-    header("Location: calendario-mensal.html");
+    header("Location: ../pages/calendario-adm-crud.html");
 } else {
     // Login failed
     echo "<script>alert('CPF ou senha incorretos');</script>";
-    header("refresh: 1; login-bs.html");
+    header("refresh: 1; ../pages/login.html");
 }
 
 $conn->close();
