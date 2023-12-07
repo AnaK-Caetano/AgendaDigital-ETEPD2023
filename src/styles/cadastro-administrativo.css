@@ -138,6 +138,7 @@ main{
 @media (max-width: 1008px) {
     .cadastro-input-box {
         max-width: 100%;
+        font-size: 1rem;
     }
     .cadastro-forms-container{
         display: flex;
@@ -145,6 +146,11 @@ main{
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin: 3rem 7rem;
+        margin: 3rem 3rem;
+    }
+    .cadastro-cta-btn{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
