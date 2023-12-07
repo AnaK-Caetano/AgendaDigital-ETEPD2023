@@ -9,11 +9,17 @@
     list-style: none;
 }
 
+body{
+    background-color: #d7a614;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
 main{
-    background-color: #fffefb;
-    display: flex;
-  }
-  
+  display: flex;
+}
+
 .cadastro-container{
     position: relative;
     max-width: 56rem;
@@ -22,11 +28,19 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 2rem;
     
     align-items: center;
     padding: 1.5rem 0rem;
     margin: auto;
+}
+
+.adm-link{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.75rem;
+}
+
+.adm-link a{
+    text-decoration: none;
 }
 
 .cadastro-forms-container{
@@ -121,24 +135,4 @@ main{
     font-size: 1rem;
     justify-content: center;
     align-items: center;
-}
-
-.cta-cad-adm{
-    background-color: #F3A310;
-    cursor: pointer;
-    border-radius: 0.5938rem;
-    
-    padding: 0.5rem 4.5rem;
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.cadastro-administrativo a{
-    color: white;
-    text-decoration: none;
 }
