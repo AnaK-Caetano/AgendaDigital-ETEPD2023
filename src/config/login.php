@@ -1,30 +1,33 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "calendariodb";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include("conexao.php");
 
 $cpf = $_POST["cpf"];
 $senha = $_POST["senha"];
 
-$sql = "SELECT * FROM usuarios WHERE cpf = '$cpf' AND senha = '$senha'";
-$result = $conn->query($sql);
+$sql = "SELECT * FROM usuarios WHERE cpf = '$cpf'";
+$result = $conexao->query($sql);
 
-if ($result->num_rows > 0) {
-    // Login successful
-    header("Location: ../pages/calendario-adm-crud.html");
+if ($result && $result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $hashSenhaArmazenada = $row['senha'];
+
+    if (password_verify($senha, $hashSenhaArmazenada)) {
+        // Senha correta, login bem-sucedido
+        header("Location: ../pages/calendario-adm-crud.html");
+        exit();
+    } else {
+        // Senha incorreta
+        echo "<script>alert('CPF ou senha incorretos');</script>";
+        header("refresh: 1; ../pages/login.html");
+        exit();
+    }
 } else {
-    // Login failed
-    echo "<script>alert('CPF ou senha incorretos');</script>";
-    header("refresh: 1; ../pages/login.html");
+    // Usuário não encontrado
+    echo "<script>alert('Usuário não cadastrado');</script>";
+    header("refresh: 1; ../pages/cadastro.html");
+    exit();
 }
 
-$conn->close();
+$conexao->close();
 ?>
