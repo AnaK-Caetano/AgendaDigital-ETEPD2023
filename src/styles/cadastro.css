@@ -18,11 +18,12 @@ body{
 
 main{
   display: flex;
+  background-color: #fffefb;
 }
 
 .cadastro-container{
     position: relative;
-    max-width: 56rem;
+    max-width: 58rem;
     width: 100%;
     
     display: flex;
@@ -41,6 +42,7 @@ main{
 
 .adm-link a{
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .cadastro-forms-container{
@@ -55,7 +57,9 @@ main{
 .cadastro-container h1{
     padding: 1rem 0.625rem;
     text-align: center;
+    margin-bottom: 0rem;
 }
+
 
 .fieldset{
     border: none;
@@ -80,7 +84,7 @@ main{
     padding: 0.5rem 0;
     max-width: 23rem;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1rem;
     position: relative;
     color: #262626;
 }
@@ -104,13 +108,17 @@ main{
     flex-direction: row;
     padding: 1rem;
     justify-content: space-around;
-    text-transform: uppercase;
 }
 
 .retornar{
+    display: flex;
+    align-items: center;
+
     background-color: #C3B8B8;
     cursor: pointer;
-    border-radius: 0.5938rem;
+    border-radius: 9.5px;
+    color: #3A2F2F;
+    border-color: #3A2F2F ;
     
     padding: 0.5rem 4.5rem;
     font-size: 1rem;
@@ -120,19 +128,34 @@ main{
 
 .retornar a{
     text-decoration: none;
-    color: #0049A6;
+    color: #3A2F2F;
     text-align: center;
+    align-items: center;
 }
 
 .finalizar{
     background-color: #F3A310;
     cursor: pointer;
-    border-radius: 0.5938rem;
+    border-radius: 9.5px;
+    border-color: #3A2F2F;
+    color: #3A2F2F;
 
-    border: none;
-    
     padding: 0.5rem 4.5rem;
     font-size: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1303px) {
+    .cadastro-input-box {
+        max-width: 100%;
+    }
+    .cadastro-forms-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 3rem 7rem;
+    }
 }
