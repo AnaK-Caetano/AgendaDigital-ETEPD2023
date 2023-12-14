@@ -1,7 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+  //seletor do calendário
+  var calendarEl = document.getElementById('calendar');
 
+  //instanciar o seletor calendar
     var calendar = new FullCalendar.Calendar(calendarEl, {
       headerToolbar: {
         left: 'prev,next today',
@@ -12,31 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
         // Idioma
         locale:'pt-br',
       
-      
         navLinks: true, // can click day/week names to navigate views
-      selectable: true,
-      selectMirror: true,
-      select: function(arg) {
-        var title = prompt('Event Title:');
-        if (title) {
-          calendar.addEvent({
-            title: title,
-            start: arg.start,
-            end: arg.end,
-            allDay: arg.allDay
-          })
-        }
-        calendar.unselect()
-      },
-      eventClick: function(arg) {
-        if (confirm('Are you sure you want to delete this event?')) {
-          arg.event.remove()
-        }
-      },
-      editable: true,
-        dayMaxEvents: true, // allow "more" link when too many events
+
+        //Clicar e arrastar o mouse sobre um evento
+        selectable: true,
+
+        //indicar visualmente a área selecionada antes do usuário soltar o botão para confirmar seleção
+        selectMirror: true,
+
+        //Arrastar e redimensionar os eventos do calendário
+        editable: true,
+        dayMaxEvents: true,
       
-        events: 'listar_evento.php'
+        events: './config/listar-evento.php'
     });
 
     calendar.render();
