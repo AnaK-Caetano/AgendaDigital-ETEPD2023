@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         editable: true,
         dayMaxEvents: true,
       
-        events: './config/listar-evento.php'
+        events: 'listar_evento.php'
     });
 
     calendar.render();
